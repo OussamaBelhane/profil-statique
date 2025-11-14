@@ -22,7 +22,7 @@ export default function ProfilInteractif() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
-        source={{ uri: 'https://ui-avatars.com/api/?name=Oussama+Belhane&size=150://i.pravatar.cc/150?img=2' }}
+        source={{ uri: 'https://ui-avatars.com/api/?name=Oussama+Belhane&size=150&background=0D8ABC&color=fff&bold=true' }}
         style={styles.avatar}
       />
       <Text style={styles.title}>Profil utilisateur</Text>
@@ -57,11 +57,13 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     alignItems: 'center',
+    paddingTop: 60,        // ← Ajouté : espace en haut du container
   },
   avatar: {
     width: 150,
     height: 150,
     borderRadius: 75,
+    marginTop: 20,         // ← Ajouté : espace au-dessus de l'avatar
     marginBottom: 20,
   },
   title: {
